@@ -52,10 +52,6 @@ The model architecture consists of:
 
 Once trained, the model can generate captions for new images, demonstrating the capability of deep learning in understanding and describing visual content.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgments
 
 - [TensorFlow](https://www.tensorflow.org/) for providing the deep learning framework.
