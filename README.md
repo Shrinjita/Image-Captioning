@@ -1,3 +1,5 @@
+By combining Convolutional Neural Networks (CNNs) for feature extraction with Recurrent Neural Networks (RNNs) for sequence generation, the model learns to associate visual elements with corresponding textual descriptions.
+
 ## Dataset
 The model is trained on the **Flickr8k dataset**, which contains 8,000 images, each annotated with five different captions. This diverse set of images provides a rich resource for training the captioning model.
 
