@@ -1,58 +1,43 @@
-# Image Captioning
+## Dataset
+The model is trained on the **Flickr8k dataset**, which contains 8,000 images, each annotated with five different captions. This diverse set of images provides a rich resource for training the captioning model.
 
-## Overview
+## Features
+- **Deep Learning Architecture**: Utilizes CNNs and RNNs to process images and generate captions.
+- **Comprehensive Walkthrough**: The Jupyter notebook includes a step-by-step explanation of the model architecture, data preprocessing, training, and evaluation.
+- **Performance Metrics**: Detailed analysis of model performance using various evaluation metrics to ensure effective caption generation.
 
-The project employs the **VGG16** architecture for feature extraction from images and uses an **LSTM** network for generating captions based on the extracted features. The goal is to create meaningful descriptions of images through an end-to-end learning approach.
+## Technologies Used
+- Python
+- TensorFlow / Keras
+- NumPy
+- Matplotlib (for visualizations)
 
-## Requirements
+## Getting Started
+To run this project locally, follow these steps:
 
-To run this project, you will need the following Python packages:
-
-- `numpy`
-- `tensorflow`
-- `tqdm`
-- `pickle`
-
-You can install the necessary packages using pip:
-
-```bash
-pip install numpy tensorflow tqdm
-```
-
-## Project Structure
-
-- `ImageCaptioning.ipynb`: The main Jupyter notebook that contains the implementation of the image captioning model, including:
-  - Importing libraries and necessary modules
-  - Data preprocessing and feature extraction using VGG16
-  - Building the LSTM model for caption generation
-  - Training and evaluation of the model
-
-## Usage
-
-1. **Clone the Repository**:
+1. **Clone the repository**:
    ```bash
    git clone https://github.com/Shrinjita/Image-Captioning.git
    cd Image-Captioning
    ```
 
-2. **Open the Jupyter Notebook**:
-   Launch Jupyter Notebook and open `ImageCaptioning.ipynb`.
+2. **Download the Flickr8k dataset**:
+   You can download the dataset from [here](http://web.engr.illinois.edu/~bplumme2/Flickr8k_Dataset.htm). Ensure that the dataset is placed in the correct directory as referenced in the notebook.
 
-3. **Run the Notebook**:
-   Follow the steps in the notebook to preprocess images, train the model, and generate captions.
+3. **Install the required packages**:
+   If you don’t have the required libraries installed, you can do so with:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-## Model Architecture
+4. **Run the Jupyter Notebook**:
+   Start Jupyter Notebook:
+   ```bash
+   jupyter notebook
+   ```
 
-The model architecture consists of:
-- **CNN (VGG16)**: Used for feature extraction from images.
-- **RNN (LSTM)**: Used for sequence prediction to generate captions.
-- **Tokenizer**: To convert text captions into sequences for model input.
+5. **Open the Notebook**:
+   Open `ImageCaptioning.ipynb` to explore the project and generate captions for your images.
 
-## Results
-
-Once trained, the model can generate captions for new images, demonstrating the capability of deep learning in understanding and describing visual content.
-
-## Acknowledgments
-
-- [TensorFlow](https://www.tensorflow.org/) for providing the deep learning framework.
-- [Keras](https://keras.io/) for high-level neural network APIs.
+## Usage
+Load your images from the Flickr8k dataset and generate captions by executing the cells in the notebook. The model can be further fine-tuned with additional training data for improved performance.
